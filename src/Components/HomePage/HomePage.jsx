@@ -51,7 +51,7 @@ function HomePage() {
         style={{ display: searchOption ? "" : "none" }}
         className="searchHomeMainDiv"
       >
-        <div className="homeHeadingDivSearch">Search Option</div>
+        <div className="homeHeadingDivSearch">Search Movie</div>
         <div className="imageHomeDiv">
           {searchData.map((elem, index) => {
             return (
