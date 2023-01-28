@@ -1,0 +1,57 @@
+.detailPageMainDiv {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 90%;
+  padding: 0.5rem;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+.detailPageLeftDiv {
+  margin-left: 1rem;
+  width: 20%;
+  height: 400px;
+  /* border: 2px solid teal; */
+}
+.detailPageLeftDiv > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.detailPageRightDiv {
+  margin-right: 1rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid tomato; */
+  padding-top: 2%;
+}
+.starImage {
+  height: 100px;
+  width: 100px;
+  border: 2px solid red;
+}
+.starImage > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+@media (min-width: 360px) and (max-width: 768px) {
+  .detailPageMainDiv {
+    flex-direction: column;
+  }
+  .detailPageLeftDiv,
+  .detailPageRightDiv {
+    width: 80%;
+  }
+  .detailPageLeftDiv {
+    height: 250px;
+  }
+  .detailPageRightDiv {
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,46 @@
+.homeMainDiv,
+.searchHomeMainDiv {
+  /* border: 2px solid red; */
+  width: 97%;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.searchHomeMainDiv {
+  z-index: 200;
+  position: relative;
+  margin-top: 0.5rem;
+  width: 70%;
+  background-color: white;
+}
+.homeHeadingDiv {
+  font-size: xx-large;
+  font-weight: 600;
+}
+.homeHeadingDivSearch {
+  font-size: xx-large;
+  font-weight: 600;
+  color: black;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+.imageHomeDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  width: 96.5%;
+  overflow: scroll;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.imageDiv {
+  padding: 0.5rem;
+}
+.imageDiv > img {
+  height: 200px;
+  width: 220px;
+}
