@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { MovieContext } from "../../Context/MovieContextProvider";
 import Navbar from "../Navbar/Navbar";
-import axios from "axios";
 import { useState } from "react";
 import "./HomePage.css";
 import { useNavigate } from "react-router";
@@ -20,17 +19,21 @@ function HomePage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    setLoading(true);
-    axios
-      .get(` http://api.tvmaze.com/search/shows?q=${searchParam}`)
-      .then(({ data }) => {
-        setRenderData(data);
+    async function fetchMovieSearch() {
+      setLoading(true);
+      try {
+        const res = await fetch(
+          `http://api.tvmaze.com/search/shows?q=${searchParam}`
+        );
+        const response = await res.json();
+        setRenderData(response);
         setLoading(false);
-      })
-      .catch((err) => {
-        setLoading(false);
+      } catch (err) {
         console.log(err.message);
-      });
+        setLoading(false);
+      }
+    }
+    fetchMovieSearch();
   }, [searchParam]);
   const handleDetailsPage = (data) => () => {
     setDetailsPage(data);

@@ -32,7 +32,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 1.5rem;
-  width: 100%;
+  width: 96.5%;
   overflow: scroll;
   padding: 1rem;
   border-radius: 5px;
@@ -43,6 +43,4 @@
 .imageDiv > img {
   height: 200px;
   width: 220px;
-  /* object-fit: contain; */
-  /* border: 2px solid teal; */
 }
