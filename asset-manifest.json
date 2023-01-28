@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/digiaccel-assignment/static/css/main.6d469595.css",
-    "main.js": "/digiaccel-assignment/static/js/main.ea7b6ae9.js",
+    "main.js": "/digiaccel-assignment/static/js/main.25d49ca8.js",
     "static/js/787.622ff660.chunk.js": "/digiaccel-assignment/static/js/787.622ff660.chunk.js",
     "index.html": "/digiaccel-assignment/index.html",
     "main.6d469595.css.map": "/digiaccel-assignment/static/css/main.6d469595.css.map",
-    "main.ea7b6ae9.js.map": "/digiaccel-assignment/static/js/main.ea7b6ae9.js.map",
+    "main.25d49ca8.js.map": "/digiaccel-assignment/static/js/main.25d49ca8.js.map",
     "787.622ff660.chunk.js.map": "/digiaccel-assignment/static/js/787.622ff660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d469595.css",
-    "static/js/main.ea7b6ae9.js"
+    "static/js/main.25d49ca8.js"
   ]
 }
