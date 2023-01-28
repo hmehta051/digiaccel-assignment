@@ -10,7 +10,6 @@ function DetailsPage() {
     setDetailsPage(data);
     setSearchData([]);
   };
-
   return (
     <>
       <Navbar type="Detail" />
@@ -18,7 +17,6 @@ function DetailsPage() {
         style={{ display: searchData.length !== 0 ? "" : "none" }}
         className="searchHomeMainDiv"
       >
-        {/* <div className="homeHeadingDiv">Search Option</div> */}
         <div className="imageHomeDiv">
           {searchData.map((elem, index) => {
             return (
@@ -40,7 +38,6 @@ function DetailsPage() {
           })}
         </div>
       </div>
-      {/* detail page div */}
       <div className="detailPageMainDiv">
         <div className="detailPageLeftDiv">
           <img
@@ -68,13 +65,6 @@ function DetailsPage() {
             >
               ★★★★★
             </div>
-
-            {/* <div className="starImage">
-              <img
-                src="https://t4.ftcdn.net/jpg/02/74/86/43/360_F_274864312_uNlm9yCpdViwKzHkCp0sOBrmJFN0pKAa.jpg"
-                alt="starImage"
-              />
-            </div> */}
           </div>
           <div style={{ marginTop: "1rem", marginBottom: "1rem" }}>
             <div>Year | length | director</div>

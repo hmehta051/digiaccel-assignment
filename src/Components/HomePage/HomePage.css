@@ -20,6 +20,13 @@
   font-size: xx-large;
   font-weight: 600;
 }
+.homeHeadingDivSearch {
+  font-size: xx-large;
+  font-weight: 600;
+  color: black;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
 .imageHomeDiv {
   display: flex;
   flex-direction: row;
@@ -27,7 +34,6 @@
   gap: 1.5rem;
   width: 100%;
   overflow: scroll;
-  border: 1px solid gray;
   padding: 1rem;
   border-radius: 5px;
 }

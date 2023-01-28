@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { MovieContext } from "../../Context/MovieContextProvider";
 import "./Navbar.css";
-import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const {
@@ -15,14 +15,18 @@ function Navbar() {
   const [value, setValue] = useState("");
 
   useEffect(() => {
-    axios
-      .get(`http://api.tvmaze.com/search/shows?q=${value}`)
-      .then(({ data }) => {
-        setSearchData(data);
-      })
-      .catch((err) => {
+    async function fetchMovieApi() {
+      try {
+        const res = await fetch(
+          `http://api.tvmaze.com/search/shows?q=${value}`
+        );
+        const response = await res.json();
+        setSearchData(response);
+      } catch (err) {
         console.log(err.message);
-      });
+      }
+    }
+    fetchMovieApi();
     // eslint-disable-next-line
   }, [value]);
 
@@ -46,7 +50,9 @@ function Navbar() {
   return (
     <>
       <div className="navbarTvAppMainDiv">
-        <div className="navbarTvAppTitleDiv">TV App</div>
+        <Link to="/" className="navbarTvAppTitleDiv">
+          TV App
+        </Link>
         <div className="navbarTvAppSearchDiv">
           <div className="searchDropDownDiv">
             <input
@@ -56,7 +62,6 @@ function Navbar() {
               type="search"
               placeholder="Search"
             />
-            {/* dropdown div  */}
             <div
               style={{
                 display: showDropDown && searchData.length !== 0 ? "" : "none",
