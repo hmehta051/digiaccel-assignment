@@ -1,9 +1,9 @@
-import React, { useContext, useEffect } from "react";
+import React, { lazy, useContext, useEffect } from "react";
 import { MovieContext } from "../../Context/MovieContextProvider";
-import Navbar from "../Navbar/Navbar";
 import { useState } from "react";
 import "./HomePage.css";
 import { useNavigate } from "react-router";
+const Navbar = lazy(() => import("../Navbar/Navbar"));
 
 function HomePage() {
   const {
@@ -42,7 +42,7 @@ function HomePage() {
   useEffect(() => {
     setSearchOption(false);
     // eslint-disable-next-line
-  }, [window.location.href]);
+  }, []);
 
   return (
     <>
