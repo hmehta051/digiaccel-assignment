@@ -63,18 +63,21 @@ function DetailsPage() {
                 color: "teal",
               }}
             >
-              ★★★★★
+              ★★★★
             </div>
           </div>
           <div style={{ marginTop: "1rem", marginBottom: "1rem" }}>
-            <div>Year | length | director</div>
-            <div>Cast : John Jacob, hans meir, mohammad ali</div>
+            <div>Year | length | Director</div>
+            <div>Cast : Tony Stark, Chris Evans, Chris Hemsworth</div>
           </div>
           <div>
-            Movie Desscription : Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Illum nesciunt ad doloribus quis quidem corrupti
-            odio recusandae, esse fugit quaerat laudantium inventore impedit
-            tempore quas perferendis natus iure qui. Cupiditate.
+            Movie Description : Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Sit consequatur minus adipisci cupiditate
+            laboriosam dolores doloremque deleniti possimus accusantium officia
+            repudiandae, laudantium dolorem dicta. Eum provident quam dolore
+            nemo repellat doloribus eius quos suscipit assumenda animi, officiis
+            magnam asperiores aut quod perferendis ipsa at placeat ut earum, in
+            sunt ad.
           </div>
         </div>
       </div>
