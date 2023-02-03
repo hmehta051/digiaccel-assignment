@@ -1,8 +1,6 @@
-import { lazy } from "react";
 import { Route, Routes } from "react-router";
-const DetailsPage = lazy(() => import("./Components/DetailsPage/DetailsPage"));
-const HomePage = lazy(() => import("./Components/HomePage/HomePage"));
-
+import DetailsPage from "./Components/DetailsPage/DetailsPage";
+import HomePage from "./Components/HomePage/HomePage";
 function App() {
   return (
     <>
