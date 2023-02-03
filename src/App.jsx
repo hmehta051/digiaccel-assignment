@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router";
 import DetailsPage from "./Components/DetailsPage/DetailsPage";
 import HomePage from "./Components/HomePage/HomePage";
 function App() {
+  //Routes
   return (
     <>
       <Routes>
